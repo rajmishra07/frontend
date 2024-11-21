@@ -26,7 +26,7 @@ function App() {
     try {
        const parsedInput = JSON.parse(jsonInput);
       
-       const apiResponse = await axios.post('', parsedInput);
+       const apiResponse = await axios.post('backend-production-4c55.up.railway.app/bfhl', parsedInput);
       setResponse(apiResponse.data);
     } catch (err) {
       setError('Invalid JSON or API error');
